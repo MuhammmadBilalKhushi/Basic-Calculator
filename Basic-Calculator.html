@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Calculator</title>
+  </head>
+  <body>
+    <script>
+      var num1 = prompt("Enter first number");
+      var num2 = prompt("Enter second number");
+      var opr = prompt("Please select your operator +,-,*,/");
+      switch (opr) {
+        //if user enter opr +
+        case "+":
+          var res = parseFloat(num1) + parseFloat(num2);
+          //   console.log(`${num1}  + ${num2} = ${res}`);
+          console.log(num1, "", opr, "", num2, "=", res);
+          break;
+        //if user enter opr -
+        case "-":
+          var res = parseFloat(num1) - parseFloat(num2);
+          console.log(num1, "", opr, "", num2, "=", res);
+          break;
+        //if user enter opr *
+        case "*":
+          var res = parseFloat(num1) * parseFloat(num2);
+          console.log(num1, "", opr, "", num2, "=", res);
+          break;
+        //if user enter opr /
+        case "/":
+          var res = parseFloat(num1) / parseFloat(num2);
+          console.log(num1, "", opr, "", num2, "=", res);
+          break;
+        default:
+          console.log("Invalid Number");
+      }
+    </script>
+  </body>
+</html>
